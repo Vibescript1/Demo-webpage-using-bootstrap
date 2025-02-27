@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-image {
+            background-image: url('./IMAGES/pexels-artempodrez-7233356.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+        }
+    </style>
+</head>
+<body class="bg-image d-flex justify-content-center align-items-center ">
+
+<div class="container d-flex justify-content-center align-items-center vh-100 ">
+    <div class="bg-white p-4 w-100 shadow-lg  rounded hover-shadow" style="max-width: 400px;">
+        <!-- Pills navs -->
+        <ul class="nav nav-pills nav-justified mb-3">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#pills-login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#pills-register">Register</a>
+            </li>
+        </ul>
+
+        <!-- Pills content -->
+        <div class="tab-content">
+            <!-- Login Tab -->
+            <div class="tab-pane fade show active" id="pills-login">
+                <form>
+                    <div class="text-center mb-3">
+                        <p class="">Sign in with:</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button type="button" class="btn btn-outline-primary rounded-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger rounded-circle">
+                                <i class="fab fa-google"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-info rounded-circle">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark rounded-circle">
+                                <i class="fab fa-github"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="text-center">or:</p>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email or Username</label>
+                        <input type="email" class="form-control rounded" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control rounded" placeholder="Enter your password">
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="text-primary">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 rounded"><a href="http://127.0.0.1:5500/index.html" class="text-decoration-none text-white ">SIgn In </a></button>
+                    <div class="text-center mt-3">
+                        <p>Not a member? <a href="#" class="text-primary">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Tab -->
+            <div class="tab-pane fade" id="pills-register">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control rounded" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control rounded" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control rounded" placeholder="Create a password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control rounded" placeholder="Confirm password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 rounded">Register</button>
+
+                    <div class="text-center mt-3">
+                        <p>Already have an account? <a href="#" class="text-primary">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
